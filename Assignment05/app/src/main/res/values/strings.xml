@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Assignment05</string>
+    <string name="Welcome">Welcome !!</string>
+    <string name="Start">Start</string>
+    <string name="CreateUserInfo">User Info</string>
+    <string name="Name">Name :</string>
+    <string name="EnterName">Enter Name</string>
+    <string name="EnterEmail">Enter Email</string>
+    <string name="Email">Email :</string>
+    <string name="Role">Role :</string>
+    <string name="Student">Student</string>
+    <string name="Employee">Employee</string>
+    <string name="Other">Other</string>
+    <string name="Next">Next</string>
+    <string name="Profile">Profile</string>
+    <string name="Update">Update</string>
+    <string name="EditUserActivity">Edit User Info</string>
+    <string name="Submit">Submit</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Age">Age :</string>
+    <string name="EnterAge">Enter Age</string>
+    <string name="Country">Country :</string>
+    <string name="ChooseACountry">Choose a Country</string>
+    <string name="DOB">DoB :</string>
+    <string name="Select">Select</string>
+    <string name="DateOfBirth">Date Of Birth</string>
+    <string name="SelectYourDOB">Select your date of birth:</string>
+    <string name="NA">N/A</string>
+    <string name="ok">OK</string>>
+</resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayoutBillSummary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BillSummaryFragment" >
+
+    <TextView
+        android:id="@+id/textViewBillSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/BillSummary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <TextView
+        android:id="@+id/textViewBillName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:text="@string/BillName"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBillNameValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewBillNameValue"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewBillNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/NA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewBillName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBillSummary" />
+
+    <TextView
+        android:id="@+id/textViewBillAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BillAmount"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBillAmountValue"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBillName"
+        app:layout_constraintStart_toStartOf="@+id/textViewBillName"
+        app:layout_constraintTop_toTopOf="@+id/textViewBillAmountValue" />
+
+    <TextView
+        android:id="@+id/textViewBillAmountValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/NA"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBillNameValue"
+        app:layout_constraintStart_toStartOf="@+id/textViewBillNameValue"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBillNameValue" />
+
+    <TextView
+        android:id="@+id/textViewDiscountPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DiscountPercent"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDiscountPercentValue"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBillAmount"
+        app:layout_constraintStart_toStartOf="@+id/textViewBillAmount"
+        app:layout_constraintTop_toTopOf="@+id/textViewDiscountPercentValue" />
+
+    <TextView
+        android:id="@+id/textViewDiscountPercentValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/NA"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBillAmountValue"
+        app:layout_constraintStart_toStartOf="@+id/textViewBillAmountValue"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBillAmountValue" />
+
+    <TextView
+        android:id="@+id/textViewDiscountAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DiscountAmount"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDiscountAmountValue"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDiscountPercent"
+        app:layout_constraintStart_toStartOf="@+id/textViewDiscountPercent"
+        app:layout_constraintTop_toTopOf="@+id/textViewDiscountAmountValue" />
+
+    <TextView
+        android:id="@+id/textViewDiscountAmountValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/NA"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDiscountPercentValue"
+        app:layout_constraintStart_toStartOf="@+id/textViewDiscountPercentValue"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDiscountPercentValue" />
+
+    <TextView
+        android:id="@+id/textViewTotalBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TotalBill"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTotalBillValue"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDiscountAmount"
+        app:layout_constraintStart_toStartOf="@+id/textViewDiscountAmount"
+        app:layout_constraintTop_toTopOf="@+id/textViewTotalBillValue" />
+
+    <TextView
+        android:id="@+id/textViewTotalBillValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/NA"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDiscountAmountValue"
+        app:layout_constraintStart_toStartOf="@+id/textViewDiscountAmountValue"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDiscountAmountValue" />
+
+    <TextView
+        android:id="@+id/textViewBillDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BillDate"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBillDateValue"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTotalBill"
+        app:layout_constraintStart_toStartOf="@+id/textViewTotalBill"
+        app:layout_constraintTop_toTopOf="@+id/textViewBillDateValue" />
+
+    <TextView
+        android:id="@+id/textViewBillDateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/NA"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTotalBillValue"
+        app:layout_constraintStart_toStartOf="@+id/textViewTotalBillValue"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalBillValue" />
+
+    <Button
+        android:id="@+id/buttonCreateBill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/CreateNewBill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBillDateValue"
+        app:layout_constraintVertical_bias="0.225" />
+</androidx.constraintlayout.widget.ConstraintLayout>

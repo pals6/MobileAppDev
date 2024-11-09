@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateUserFragment" >
+
+    <Button
+        android:id="@+id/buttonSelectState"
+        android:layout_width="100dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/Select"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewStateSelected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewStateSelected"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewDOB"
+        android:layout_width="63dp"
+        android:layout_height="25dp"
+        android:text="@string/DOB"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDOBSelected"
+        app:layout_constraintStart_toStartOf="@+id/textViewState"
+        app:layout_constraintTop_toTopOf="@+id/textViewDOBSelected"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="392dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCreateUserInfo"
+        app:layout_constraintVertical_bias="0.861" />
+
+    <TextView
+        android:id="@+id/textViewStateSelected"
+        android:layout_width="73dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/NA"
+        app:layout_constraintStart_toEndOf="@+id/textViewState"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <TextView
+        android:id="@+id/textViewDOBSelected"
+        android:layout_width="75dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/NA"
+        app:layout_constraintEnd_toEndOf="@+id/textViewStateSelected"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/textViewDOB"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDemographics" />
+
+    <TextView
+        android:id="@+id/textViewPhone"
+        android:layout_width="63dp"
+        android:layout_height="25dp"
+        android:text="@string/Phone"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextPhone"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmail"
+        app:layout_constraintTop_toTopOf="@+id/editTextPhone"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="63dp"
+        android:layout_height="25dp"
+        android:text="@string/Email"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextEmail"
+        app:layout_constraintStart_toStartOf="@+id/textViewName"
+        app:layout_constraintTop_toTopOf="@+id/editTextEmail"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="254dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/EnterName"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toEndOf="@+id/textViewName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCreateUserInfo" />
+
+    <TextView
+        android:id="@+id/textViewState"
+        android:layout_width="63dp"
+        android:layout_height="25dp"
+        android:text="@string/State"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewStateSelected"
+        app:layout_constraintStart_toStartOf="@+id/textViewPhone"
+        app:layout_constraintTop_toTopOf="@+id/textViewStateSelected"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="63dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/Name"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextName"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <TextView
+        android:id="@+id/textViewCreateUserInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CreateUserInfo"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="254dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/EnterEmail"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/editTextName"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintStart_toEndOf="@+id/textViewEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <Button
+        android:id="@+id/buttonSelectDOB"
+        android:layout_width="100dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/Select"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDOBSelected"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSelectState"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewDOBSelected"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSelectState"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="254dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/EnterPhone"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <TextView
+        android:id="@+id/textViewContactInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Info"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCreateUserInfo" />
+
+    <TextView
+        android:id="@+id/textViewDemographics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Demographics"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewState"
+        app:layout_constraintTop_toBottomOf="@+id/textViewState" />
+
+    <TextView
+        android:id="@+id/textViewMaritalStatus"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="@string/MaritalStatus"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMaritalStatusSelected"
+        app:layout_constraintStart_toStartOf="@+id/textViewDOB"
+        app:layout_constraintTop_toTopOf="@+id/textViewMaritalStatusSelected"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewMaritalStatusSelected"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/NA"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDOBSelected"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewMaritalStatus"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDOBSelected" />
+
+    <Button
+        android:id="@+id/buttonSelectMaritalStatus"
+        android:layout_width="100dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/Select"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMaritalStatusSelected"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSelectDOB"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewMaritalStatusSelected"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSelectDOB"
+        app:layout_constraintVertical_bias="0.26999998" />
+
+    <TextView
+        android:id="@+id/textViewEduLevel"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:text="@string/EduLevel"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEduLevelSelected"
+        app:layout_constraintStart_toStartOf="@+id/textViewMaritalStatus"
+        app:layout_constraintTop_toTopOf="@+id/textViewEduLevelSelected"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewEduLevelSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/NA"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNext"
+        app:layout_constraintStart_toEndOf="@+id/textViewEduLevel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMaritalStatusSelected" />
+
+    <Button
+        android:id="@+id/buttonSelectEduLevel"
+        android:layout_width="100dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/Select"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEduLevelSelected"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSelectMaritalStatus"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewEduLevelSelected"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSelectMaritalStatus"
+        app:layout_constraintVertical_bias="0.285" />
+</androidx.constraintlayout.widget.ConstraintLayout>

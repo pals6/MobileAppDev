@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Assignment04</string>
+    <string name="welcome">Welcome !!</string>
+    <string name="Start">Start</string>
+    <string name="CreateUserInfo">Create User Info</string>
+    <string name="Name">Name :</string>
+    <string name="EnterName">Enter Name</string>
+    <string name="EnterEmail">Enter Email</string>
+    <string name="Email">Email :</string>
+    <string name="Role">Role :</string>
+    <string name="Student">Student</string>
+    <string name="Employee">Employee</string>
+    <string name="Other">Other</string>
+    <string name="Next">Next</string>
+    <string name="Profile">Profile</string>
+    <string name="Update">Update</string>
+    <string name="EditUserActivity">Edit User Info</string>
+    <string name="Submit">Submit</string>
+    <string name="Cancel">Cancel</string>
+
+</resources>

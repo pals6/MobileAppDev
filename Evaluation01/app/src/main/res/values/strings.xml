@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Evaluation01</string>
+    <string name="calculator">Simple Calculator</string>
+    <string name="reset">Reset</string>
+    <string name="calculate">Calculate</string>
+    <string name="operator">Operator</string>
+    <string name="operation">Operation:</string>
+    <string name="output"></string>
+    <string name="Add">Add</string>
+    <string name="Subtract">Subtract</string>
+    <string name="Multiply">Multiply</string>
+    <string name="Divide">Divide</string>
+</resources>

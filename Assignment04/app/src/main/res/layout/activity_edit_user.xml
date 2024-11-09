@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditUserActivity">
+
+    <TextView
+        android:id="@+id/textViewEditUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/EditUserActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNameEditUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEditUser" />
+
+    <TextView
+        android:id="@+id/textViewEmailEditUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Email"
+        app:layout_constraintStart_toStartOf="@+id/textViewNameEditUser"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameEditUser" />
+
+    <TextView
+        android:id="@+id/textViewRoleEditUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Role"
+        app:layout_constraintStart_toStartOf="@+id/textViewNameEditUser"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmailEditUser" />
+
+    <EditText
+        android:id="@+id/editTextNameEditUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewNameEditUser"
+        app:layout_constraintStart_toEndOf="@+id/textViewNameEditUser"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEditUser" />
+
+    <EditText
+        android:id="@+id/editTextEmailEditUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEmailEditUser"
+        app:layout_constraintStart_toStartOf="@+id/editTextNameEditUser" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="218dp"
+        android:layout_height="144dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmailEditUser"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmailEditUser"
+        app:layout_constraintTop_toTopOf="@+id/textViewRoleEditUser">
+
+        <RadioButton
+            android:id="@+id/radioButtonStudentEditUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Student" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEmployeeEditUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Employee" />
+
+        <RadioButton
+            android:id="@+id/radioButtonOtherEditUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Other" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/Cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSubmit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+</androidx.constraintlayout.widget.ConstraintLayout>

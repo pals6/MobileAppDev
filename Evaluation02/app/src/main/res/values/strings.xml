@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Evaluation02</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="BillSummary">Bill Summary</string>
+    <string name="BillName">Bill Name</string>
+    <string name="NA">N/A</string>
+    <string name="BillAmount">Bill Amount</string>
+    <string name="DiscountPercent">Discount %</string>
+    <string name="DiscountAmount">Discount Amount</string>
+    <string name="TotalBill">Total Bill</string>
+    <string name="BillDate">Bill Date</string>
+    <string name="CreateNewBill">Create New Bill</string>
+</resources>
